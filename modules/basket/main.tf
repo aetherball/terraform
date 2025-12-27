@@ -3,7 +3,8 @@ resource "b2_bucket" "instance" {
   bucket_type = var.bucket_type
 
   default_server_side_encryption {
-    mode = "SSE-B2"
+    mode      = "SSE-B2"
+    algorithm = "AES256"
   }
 
   # Enable Object Lock to prevent overwrites of files
