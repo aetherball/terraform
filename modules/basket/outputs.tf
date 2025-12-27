@@ -1,3 +1,3 @@
-output "bucket_id" {
+output "id" {
   value = b2_bucket.instance.id
 }
